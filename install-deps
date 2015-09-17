@@ -105,6 +105,10 @@ elif [[ "$(uname)" == 'Linux' ]]; then
     if [[ "$DISTRO" = "fedora" ]]; then
         distribution="fedora"
         fedora_major_version="$VERSION"
+     # Detect Debian
+    elif [[ "$DISTRO" = "debian" ]]; then
+        distribution="debian"
+        debian_major_version="$VERSION"
     # Detect archlinux
     elif [[ "$DISTRO" = "arch" ]]; then
         distribution="archlinux"
